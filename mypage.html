@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    margin:0;
+    padding: 0;
+    font-family: cursive;
+    background-image: url("/aura.png" );
+}
+nav a{
+    color: aliceblue;
+}
+li a{
+    color: aliceblue;
+}
+nav{
+    background-color: rgb(16, 16, 101);
+    font-size: 18px;
+    width:100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between; 
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+}
+nav a{
+    text-decoration: none;
+ 
+}
+.logo{
+    font-size: 38px;
+    font-weight: bolder;
+}
+nav a:hover{
+    color:pink ;
+}
+.menu-line{
+    height:3px;
+    width:20px;
+    background-color: beige;
+    
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+@media all and (max-width:640px)
+{
+    nav{
+        flex-direction: column;
+       
+    }
+    nav li{
+        display: block;
+        padding: 10px 0;
+    }
+    ul{
+        text-align: center;
+        display: none;
+    }
+    .logo{
+        align-self:flex-start;
+        margin: 10px 0px 0px 30px;
+    }
+    .menu{
+        cursor: pointer;
+        display:block;
+        position:absolute;
+        right: 20px;
+        top:25px;
+}
+}
+    </style>
+    </head>
+<body>
+   <nav>
+    <div class="logo">
+        <a href ="#" >AURA</a>
+    </div>
+    <ul>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="signup.html">SIGN UP</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="contact.html">CONTACT</a></li>    
+    </ul>
+    
+   </nav>
+</body>
+</html>
